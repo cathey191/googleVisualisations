@@ -13,6 +13,11 @@ function drawChart() {
 
 	// styling chart
 	const options = {
+		animation: {
+			startup: true,
+			easing: 'linear',
+			duration: 500
+		},
 		title: 'Births, Deaths & Marrages from NZ',
 		subtittle: 'From 2013 till 2016',
 		hAxis: {
