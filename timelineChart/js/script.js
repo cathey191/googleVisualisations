@@ -1,4 +1,4 @@
-google.charts.load('current', { packages: ['corechart'] });
+google.charts.load('current', { packages: ['timeline'] });
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
@@ -12,25 +12,10 @@ function drawChart() {
 	// ]);
 
 	const data = google.visualization.arrayToDataTable([
-		[
-			'Student',
-			'Height in m',
-			'Highest Education',
-			'To Be',
-			'House Hold Number'
-		],
-		['001', 1.68, 6, 'Graphic Designer', 5],
-		['002', 1.55, 6, 'Front End Developer', 5],
-		['003', 1.77, 5, 'Front End Developer', 2],
-		['004', 1.83, 5, 'Front End Developer', 4],
-		['005', 1.71, 6, 'Front End Developer', 4],
-		['006', 1.8, 7, 'Freelance UX/UI Designer', 2],
-		['007', 1.4, 5, 'Front End Developer', 3],
-		['008', 1.54, 5, 'Front End Developer', 4],
-		['009', 1.58, 5, 'Make Things Pretty', 4],
-		['010', 1.66, 5, 'Front End Developer', 5],
-		['011', 1.68, 3, 'Front End Developer', 5],
-		['012', 1.55, 3, 'Front End Developer', 5]
+		['Sections', 'Start', 'End'],
+		['Planning', new Date(2018, 7, 26), new Date(2018, 8, 1)],
+		['UX & UI', new Date(2018, 8, 1), new Date(2018, 8, 15)],
+		['Testing', new Date(2018, 8, 15), new Date(2018, 8, 26)]
 	]);
 
 	// styling chart
@@ -50,7 +35,7 @@ function drawChart() {
 	};
 
 	// setting chart to a bar chart
-	const chart = new google.visualization.BubbleChart(
+	const chart = new google.visualization.Timeline(
 		document.getElementById('chartContainer')
 	);
 
