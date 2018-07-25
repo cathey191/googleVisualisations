@@ -12,16 +12,19 @@ function drawChart() {
 	// ]);
 
 	const data = google.visualization.arrayToDataTable([
-		['Student', 'Module 1 Mark', 'Attendance %', 'To Be'],
-		['001', 87, 85, 'Designer'],
-		['002', 66, 69, 'Developer'],
-		['003', 64, 75, 'Designer'],
-		['004', 70, 60, 'Front End Developer'],
-		['005', 68, 80, 'Front End Developer'],
-		['006', 81, 80, 'Graphic Designer'],
-		['007', 90, 75, 'Web Developer'],
-		['008', 77, 60, 'Graphic Designer'],
-		['009', 86, 72, 'Web Developer']
+		['Student', 'Height', 'Highest Education', 'To Be', 'House Hold Number'],
+		['001', 1.68, 6, 'Graphic Designer', 5],
+		['002', 1.55, 6, 'Developer', 5],
+		['003', 1.77, 5, 'Front End Developer', 2],
+		['004', 1.83, 5, 'Web Programmer', 4],
+		['005', 1.71, 6, 'Front End Developer', 4],
+		['006', 1.8, 7, 'Freelance UX/UI Designer', 2],
+		['007', 1.4, 5, 'Front End Developer', 3],
+		['008', 1.54, 5, 'Front End Developer', 4],
+		['009', 1.58, 5, 'Make Things Pretty', 4],
+		['010', 1.66, 5, 'Front End Developer', 5],
+		['011', 1.68, 3, 'Website Developer', 5],
+		['012', 1.55, 3, 'Web Developer', 5]
 	]);
 
 	// styling chart
@@ -34,10 +37,10 @@ function drawChart() {
 		title: 'Births, Deaths & Marrages from NZ',
 		subtittle: 'From 2013 till 2016',
 		hAxis: {
-			title: 'Module 1 Mark'
+			title: 'Height'
 		},
 		vAxis: {
-			title: 'Attendance'
+			title: 'Highest Education'
 		}
 	};
 
