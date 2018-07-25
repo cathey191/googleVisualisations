@@ -19,7 +19,6 @@ function drawChart() {
 			duration: 500
 		},
 		title: 'Births, Deaths & Marrages from NZ',
-		subtittle: 'From 2013 till 2016',
 		hAxis: {
 			title: 'Number'
 		},

@@ -34,8 +34,7 @@ function drawChart() {
 			easing: 'linear',
 			duration: 500
 		},
-		title: 'Births, Deaths & Marrages from NZ',
-		subtittle: 'From 2013 till 2016',
+		title: 'Class Data',
 		hAxis: {
 			title: 'Height'
 		},
