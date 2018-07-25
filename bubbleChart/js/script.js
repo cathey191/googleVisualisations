@@ -4,11 +4,11 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 	// creating data
 	const data = google.visualization.arrayToDataTable([
-		['Year', 'Birth', 'Deaths', 'Marrages'],
-		['2013', 58719, 29568, 19237],
-		['2014', 57243, 31062, 20125],
-		['2015', 61038, 31608, 19947],
-		['2016', 59430, 31179, 20235]
+		['Year', 'Birth', 'Deaths', 'Years', 'Marrages'],
+		['2013', 58719, 29568, '2013', 19237],
+		['2014', 57243, 31062, '2014', 20125],
+		['2015', 61038, 31608, '2015', 19947],
+		['2016', 59430, 31179, '2016', 20235]
 	]);
 
 	// styling chart
