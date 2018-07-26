@@ -2,8 +2,9 @@ h1 {
 	text-align: center;
 }
 
-#countryContainer,
-#sportContainer {
+#countryChart,
+#ageChart,
+#speciesChart {
 	width: 1000px;
 	height: 700px;
 	margin: 0 auto;
